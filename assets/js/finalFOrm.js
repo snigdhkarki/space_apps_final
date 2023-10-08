@@ -131,32 +131,37 @@ function openForm() {
     </div>
     <form action="#" method="post">
       <div class="name">
-        <label for="name">Full Name:</label>
+        <label for="name">Full Name: </label>
         <input
           type="text"
           id="name"
           name="name"
-          placeholder="Name"
+          placeholder="  Name"
           required
         />
       </div>
       <div class="email">
-        <label for="email">Email:</label>
+        <label for="email">Email: </label>
         <input
           type="email"
           id="email"
           name="email"
-          placeholder="Email"
+          placeholder="  Email"
           required
         />
       </div>
       <div class="dest">
-        <label for="destination">Select Destination:</label>
+        <label for="destination" >Select Destination:</label>
         <select id="destination" name="destination" required>
-          <option value="mars">Mars</option>
-          <option value="jupiter">Jupiter</option>
-          <option value="Moon">Moon</option>
-          <option value="Jupiter">Jupiter</option>
+        <option disabled selected value="">-- Select a planet --</option>
+          <option value="mars">Mercury</option>
+          <option value="jupiter">Venus</option>
+          <option value="Moon">Earth</option>
+          <option value="Jupiter">Mars</option>
+          <option value="mars">Jupiter</option>
+          <option value="mars">Saturn</option>
+          <option value="mars">Uranus</option>
+          <option value="mars">Neptune</option>
           <!-- Add more options for other destinations -->
         </select>
       </div>
@@ -175,7 +180,7 @@ function openForm() {
           id="additional-requests"
           name="additional-requests"
           rows="4"
-          placeholder="Any Message"
+          placeholder="  Any Message"
         ></textarea>
       </div>
       <div class="submit">
