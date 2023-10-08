@@ -48,13 +48,18 @@
 			/* Add CSS styles for the app */
 			.form-group {
 				display: flex;
+        flex-direction: column;
 				justify-content: center;
 				align-items: center;
+        margin: 7%;
 				height: 40vh;
+        border: 1px solid rgba(211, 201, 201, 0.735);
+        border-radius: 10px;
 			}
 			label {
-				font-size: 30px;
+				font-size: 1em;
 				margin-bottom: 10px;
+        display: block;
 			}
 			input[type="text"] {
 				font-size: 20px;
@@ -63,24 +68,31 @@
 				padding: 10px;
 				border-radius: 10px;
 				outline: none;
-				border: 2px solid black;
+        border: 1px solid white;
+				
 			}
 			input[type="text"]:focus {
-				border: 2px solid blue;
+				border-bottom: 1px solid white;
 			}
 			button[type="submit"] {
 				font-size: 20px;
 				width: 300px;
 				height: 50px;
 				border-radius: 10px;
-				background-color: lightblue;
+				background-color: rgba(173, 216, 230, 0.374);
+        position: relative;
+        left: 15%;
 				border: none;
 				outline: none;
 				cursor: pointer;
+        
 			}
 			button[type="submit"]:active {
 				transform: scale(0.95);
 			}
+      button[type="submit"]:hover{
+        color:turquoise;
+      }
 			.alllist {
 				flex:1;
 				display: flex;
@@ -88,12 +100,36 @@
 				justify-content: center;
 				align-items: center;
 				padding: 20px;
-				border: 1px solid black;
+				border: 1px solid white;
 				border-radius: 10px;
 				box-shadow: 5px 5px 10px grey;
 				margin: 20px;
 				
 			}
+      .hello{
+        border: 1px solid rgba(211, 201, 201, 0.735);
+        border-radius: 8px;
+        padding: 1%;
+        box-shadow: 5px 5px 10px grey;
+      }
+      #prop{
+        border: 1px solid white;
+        border-radius: 8px;
+        margin: 0.2%;
+        background-color: rgba(255, 255, 255, 0.114);
+        display: none;
+        height: fit-content;
+        box-shadow: 5px 5px 10px grey;
+
+      }
+
+      @media (max-width: 1000px)
+      {
+        #top_data{
+          flex-direction: column;
+        }
+      }
+      
 		</style>
 		<link rel="stylesheet" href="assets/css/test.css" />
 		<link
@@ -121,7 +157,7 @@
         $(".collapsible").collapsible();
       });
     </script>
-<div style="display:flex;">
+<div id ="top_data" style="display:flex;">
   <div class="form-group" style="flex:2;">
     <form>
       <label for="date">Enter start date:</label>

@@ -24,31 +24,32 @@ async function getData(planet) {
 	let html = `
   <table>
     <tr>
-      <th>Name</th>
+      <th>Name:</th>
       <td>${data.name}</td>
     </tr>
     <tr>
-      <th>Mass</th>
-      <td>${data.mass * 189.8} X 10<sup>25</sup></td>
+      <th>Mass:</th>
+      <td>${data.mass * 1898} X 10<sup>24</sup> kg</td>
     </tr>
     <tr>
-      <th>Radius</th>
+      <th>Radius:</th>
       <td>${data.radius * 69911} km</td>
     </tr>
     <tr>
-      <th>Temperature</th>
+      <th>Temperature:</th>
       <td>${data.temperature} K</td>
     </tr>
     <tr>
-      <th>Semi-major Axis</th>
+      <th>Semi-major Axis:</th>
       <td>${data.semi_major_axis} AU</td>
     </tr>
     <tr>
-      <th>Distance from Earth</th>
+      <th>Distance from Earth:</th>
       <td>${data.distance_light_year} light yr</td>
     </tr>
   </table>
   `;
+	document.getElementById("prop").style.display = "block";
 	document.querySelector("#prop").innerHTML = html;
 }
 
@@ -77,9 +78,9 @@ document.querySelector("form").addEventListener("submit", function (event) {
 		</div>
 	  </div>
 	  <div class="data">
-		<div id="data_div"><div style="display:flex;"><div style="flex:1;" id="cme-list" class="alllist" style="display: none"></div><div style="flex:1;">>information about the sun and space weather should be relayed to space travellers to take precautionary measures
-			>designated safe havens with additional shielding to protect against radiation and particles associated with CMEs.
-			>Space travelers can carry radiation monitoring equipment that continuously measures the radiation levels in their environment
+		<div id="data_div"><div style="display:flex;"><div style="flex:1;" id="cme-list" class="alllist" style="display: none"></div><div class="hello" style="flex:1;">Information about the sun and space weather should be relayed to space travellers to take precautionary measures
+		<br><br>Designated safe havens with additional shielding to protect against radiation and particles associated with CMEs.
+		<br><br>Space travelers can carry radiation monitoring equipment that continuously measures the radiation levels in their environment
 			</div></div></div>
 		<div id="about_div">Bursts of solar plasma(materials) and magnetic fields into space at speed ranging from 250km/s to as fast as 3000km/s.These events are associated with the Sun and are caused by various solar activities, such as solar flares or the destabilization of the Sun's magnetic fields.
 			
@@ -95,9 +96,9 @@ document.querySelector("form").addEventListener("submit", function (event) {
 		</div>
 	  </div>
 	  <div class="data">
-		<div id="data_div1"><div style="display:flex;"><div style="flex:1;" id="gst-list" class="alllist" style="display: none"></div><div style="flex:1;">Maintain continuous communication with mission control on Earth to receive updates on space weather conditions and any alerts related to geomagnetic storms
-			>Carry and regularly use radiation monitoring equipment to measure radiation levels in your spacecraft
-			>Whenever possible, plan your mission to coincide with periods of lower solar activity, such as during solar minimum, when the risk of severe geomagnetic storms is reduced
+		<div id="data_div1"><div style="display:flex;"><div style="flex:1;" id="gst-list" class="alllist" style="display: none"></div><div class="hello" style="flex:1;"> >Maintain continuous communication with mission control on Earth to receive updates on space weather conditions and any alerts related to geomagnetic storms
+			<br><br>>Carry and regularly use radiation monitoring equipment to measure radiation levels in your spacecraft
+			<br><br>>Whenever possible, plan your mission to coincide with periods of lower solar activity, such as during solar minimum, when the risk of severe geomagnetic storms is reduced
 			</div></div></div>
 		<div id="about_div1">temporary disturbance of Earth's magnetic field caused by the interaction between the solar wind (charged particles ejected from the Sun) and Earth's magnetosphere (the region of space around Earth influenced by its magnetic field).Geomagnetic storms can result in a variety of effects on Earth and space travel, and they are often associated with solar activity, including solar flares and coronal mass ejections (CMEs).
 			</div>
@@ -112,10 +113,10 @@ document.querySelector("form").addEventListener("submit", function (event) {
 		</div>
 	  </div>
 	  <div class="data">
-		<div id="data_div2"><div style="display:flex;"><div style="flex:1;" id="ips-list" class="alllist" style="display: none"></div><div style="flex:1;">Maintain continuous communication with mission control on Earth to receive real-time updates on space weather conditions and any alerts related to interplanetary shocks.
-			>Carry and regularly use space weather monitoring equipment on your spacecraft to detect changes in the solar wind and magnetic fields.
-			>Ensure that your spacecraft is designed with a designated safe haven or sheltered area that offers enhanced radiation and particle shielding. 
-			>Wear specialized radiation protection suits or vests when entering the spacecraft's safe haven during an IPS event
+		<div id="data_div2"><div style="display:flex;"><div style="flex:1;" id="ips-list" class="alllist" style="display: none"></div><div class="hello" style="flex:1;">>Maintain continuous communication with mission control on Earth to receive real-time updates on space weather conditions and any alerts related to interplanetary shocks.
+		<br><br>>Carry and regularly use space weather monitoring equipment on your spacecraft to detect changes in the solar wind and magnetic fields.
+		<br><br>>Ensure that your spacecraft is designed with a designated safe haven or sheltered area that offers enhanced radiation and particle shielding. 
+		<br><br>>Wear specialized radiation protection suits or vests when entering the spacecraft's safe haven during an IPS event
 			</div></div></div>
 		<div id="about_div2">It is a sudden and abrupt change in the solar wind's properties as solar wind travels with high speed through space.These shocks are often associated with disturbances originating from the Sun, such as coronal mass ejections (CMEs) or solar flares.
 			</div>
@@ -130,10 +131,10 @@ document.querySelector("form").addEventListener("submit", function (event) {
 		</div>
 	  </div>
 	  <div class="data">
-		<div id="data_div3"><div style="display:flex;"><div style="flex:1;" id="flr-list" class="alllist" style="display: none"></div><div style="flex:1;">>Maintain continuous communication with mission control on Earth to receive real-time updates on space weather conditions, including any alerts related to solar flares.
-			>Carry and regularly use space weather monitoring equipment on your spacecraft to detect changes in radiation levels, particularly X-rays and charged particles.
+		<div id="data_div3"><div style="display:flex;"><div style="flex:1;" id="flr-list" class="alllist" style="display: none"></div><div class="hello" style="flex:1;">>Maintain continuous communication with mission control on Earth to receive real-time updates on space weather conditions, including any alerts related to solar flares.
+		<br><br>>Carry and regularly use space weather monitoring equipment on your spacecraft to detect changes in radiation levels, particularly X-rays and charged particles.
 			Ensure that your spacecraft is designed with a designated safe haven or sheltered area that offers enhanced radiation shielding
-			>Advocate for spacecraft designs that incorporate robust shielding materials to protect against radiation and charged particles. 
+			<br><br>>Advocate for spacecraft designs that incorporate robust shielding materials to protect against radiation and charged particles. 
 			</div></div></div>
 		<div id="about_div3">A sudden, intense burst of energy and radiation from the Sun's surface. Solar flares are some of the most energetic events in our solar system and can have various effects on space travel, types include:A and B are weakest , not noticeable.C -class: weakest type, minor impact on Earth’s ionosphere and space weather.M-class: moderate type</div>
 	  </div>
@@ -147,10 +148,10 @@ document.querySelector("form").addEventListener("submit", function (event) {
 		</div>
 	  </div>
 	  <div class="data">
-		<div id="data_div4"><div style="display:flex;"><div style="flex:1;" id="sep-list" class="alllist" style="display: none"></div><div style="flex:1;">Maintain constant communication with mission control on Earth to receive real-time updates on space weather conditions, including any alerts related to SEP events.
-			>Carry and regularly use radiation monitoring equipment on your spacecraft to detect changes in radiation levels, particularly high-energy particles. 
-			>Advocate for spacecraft designs that incorporate robust shielding materials(thicker and high density) to protect against radiation and charged particles
-			>Ensure that your spacecraft is designed with a designated safe haven or sheltered area that offers enhanced radiation shielding.
+		<div id="data_div4"><div style="display:flex;"><div style="flex:1;" id="sep-list" class="alllist" style="display: none"></div><div class="hello" style="flex:1;">>Maintain constant communication with mission control on Earth to receive real-time updates on space weather conditions, including any alerts related to SEP events.
+		<br><br>>Carry and regularly use radiation monitoring equipment on your spacecraft to detect changes in radiation levels, particularly high-energy particles. 
+		<br><br>>Advocate for spacecraft designs that incorporate robust shielding materials(thicker and high density) to protect against radiation and charged particles
+		<br><br>>Ensure that your spacecraft is designed with a designated safe haven or sheltered area that offers enhanced radiation shielding.
 			</div></div></div>
 		<div id="about_div4">Solar Energetic Particles (SEPs) are high-energy charged particles released from the Sun into space during these events and can pose a variety of risks to space travelers.As a space traveler, encountering Solar Energetic Particles (SEPs) during your mission can pose significant health risks due to their high-energy nature.
 			</div>
@@ -165,10 +166,10 @@ document.querySelector("form").addEventListener("submit", function (event) {
 		</div>
 	  </div>
 	  <div class="data">
-		<div id="data_div5"><div style="display:flex;"><div style="flex:1;" id="mpc-list" class="alllist" style="display: none"></div><div style="flex:1;">>These events are associated with the Sun and are caused by various solar activities, such as solar flares or the destabilization of the Sun's magnetic fields.
-			>Stay informed about space weather conditions, particularly solar activity and solar wind parameters. 
-			>Continuously monitor radiation levels on your spacecraft. Magnetopause crossings can involve changes in the surrounding radiation environment, so being aware of radiation levels is crucial for astronaut safety.
-			>If your spacecraft has a designated safe haven, ensure that it is well-equipped and designed to minimize radiation exposure during MPC events.
+		<div id="data_div5"><div style="display:flex;"><div style="flex:1;" id="mpc-list" class="alllist" style="display: none"></div><div class="hello" style="flex:1;">>These events are associated with the Sun and are caused by various solar activities, such as solar flares or the destabilization of the Sun's magnetic fields.
+		<br><br>>Stay informed about space weather conditions, particularly solar activity and solar wind parameters. 
+		<br><br>>Continuously monitor radiation levels on your spacecraft. Magnetopause crossings can involve changes in the surrounding radiation environment, so being aware of radiation levels is crucial for astronaut safety.
+		<br><br>>If your spacecraft has a designated safe haven, ensure that it is well-equipped and designed to minimize radiation exposure during MPC events.
 			</div></div></div>
 		<div id="about_div5">A Magnetopause Crossing (MPC) is an event that occurs when a spacecraft or object in space crosses the magnetopause,i.e. transitions from the region of space dominated by the solar wind (the interplanetary medium) to the region dominated by Earth's magnetic field (the magnetosphere).</div>
 	  </div>
@@ -182,10 +183,10 @@ document.querySelector("form").addEventListener("submit", function (event) {
 		</div>
 	  </div>
 	  <div class="data">
-		<div id="data_div6"><div style="display:flex;"><div style="flex:1;" id="rbe-list" class="alllist" style="display: none"></div><div style="flex:1;">Maintain constant communication with mission control on Earth to receive real-time updates on space weather conditions, including any alerts related to RBE events.
-			>Carry and regularly use radiation monitoring equipment on your spacecraft to detect changes in radiation levels, particularly high-energy electrons in Earth's radiation belts
-			>Ensure that your spacecraft is designed with a designated safe haven or sheltered area that offers enhanced radiation shielding.
-			>Consider wearing specialized radiation protection suits or vests when entering the spacecraft's safe haven during an RBE event.
+		<div id="data_div6"><div style="display:flex;"><div style="flex:1;" id="rbe-list" class="alllist" style="display: none"></div><div class="hello" style="flex:1;">>Maintain constant communication with mission control on Earth to receive real-time updates on space weather conditions, including any alerts related to RBE events.
+		<br><br>>Carry and regularly use radiation monitoring equipment on your spacecraft to detect changes in radiation levels, particularly high-energy electrons in Earth's radiation belts
+		<br><br>>Ensure that your spacecraft is designed with a designated safe haven or sheltered area that offers enhanced radiation shielding.
+		<br><br>>Consider wearing specialized radiation protection suits or vests when entering the spacecraft's safe haven during an RBE event.
 			</div></div></div>
 		<div id="about_div6">Radiation Belt Enhancement (RBE) refers to a temporary increase in the intensity of charged particles, particularly electrons, within Earth's radiation belts.	Encountering a Radiation Belt Enhancement (RBE) as a space traveler can pose significant risks due to increased radiation levels in Earth's radiation belts. 
 			</div>
@@ -200,9 +201,9 @@ document.querySelector("form").addEventListener("submit", function (event) {
 		</div>
 	  </div>
 	  <div class="data">
-		<div id="data_div7"><div style="display:flex;"><div style="flex:1;" id="hss-list" class="alllist" style="display: none"></div><div style="flex:1;">>Maintain continuous communication with mission control on Earth to receive real-time updates on space weather conditions, including any alerts related to HSS events.
-			>Carry and regularly use radiation monitoring equipment on your spacecraft to detect changes in radiation levels, particularly high-energy particles associated with HSS events.
-			>Advocate for spacecraft designs that incorporate robust shielding materials to protect against increased radiation exposure during HSS events.
+		<div id="data_div7"><div style="display:flex;"><div style="flex:1;" id="hss-list" class="alllist" style="display: none"></div><div class="hello" style="flex:1;">>Maintain continuous communication with mission control on Earth to receive real-time updates on space weather conditions, including any alerts related to HSS events.
+		<br>Carry and regularly use radiation monitoring equipment on your spacecraft to detect changes in radiation levels, particularly high-energy particles associated with HSS events.
+		<br>Advocate for spacecraft designs that incorporate robust shielding materials to protect against increased radiation exposure during HSS events.
 			</div></div></div>
 		<div id="about_div7">A High-Speed Stream (HSS) refers to a continuous and fast-moving stream of solar wind that emanates from the Sun's coronal holes. Encountering a High-Speed Stream (HSS) as a space traveler can pose challenges and potential risks due to increased solar wind speeds and space weather effects.
 			</div>
@@ -453,8 +454,19 @@ document.querySelector("form").addEventListener("submit", function (event) {
 		"&api_key=NiBesglkvtLGAOnd3Y0b864M6GS2HRGi3wN2lTZ6";
 
 	fetch(apiUrlcme)
-		.then((response) => response.json())
+		.then((response) => {
+			if (response.headers.get("Content-Length") == '0'){
+				return null;
+			}
+			else {
+				return response.json();
+			}
+		})
 		.then((data) => {
+			if (data == null) {
+				document.querySelector("#cme-list").innerHTML = "No data";
+				return;
+			}
 			// Assuming 'data' is an array of objects representing space weather events
 			data.forEach((eventData) => {
 				// Create a structure (object) to store the event information
@@ -495,7 +507,11 @@ document.querySelector("form").addEventListener("submit", function (event) {
 			const dangerousCMEs = spaceWeatherEventscme.filter((cme) => {
 				return cme.locationlist.includes(spaceTravelDestination);
 			});
-
+			if (dangerousCMEs.length == 0)
+			{
+				document.querySelector("#cme-list").innerHTML = "No data";
+				return;
+			}
 			console.log("dangerous");
 			console.log(dangerousCMEs);
 			// Display dangerous CME events
@@ -519,31 +535,53 @@ document.querySelector("form").addEventListener("submit", function (event) {
 			cmeListContainer.style.display = "block";
 		});
 	fetch(apiUrlgst)
-		.then((response) => response.json())
-		.then((data) => {
-			data.forEach((eventData) => {
-				const event = {
-					activityID: eventData.gstID,
-					startTime: new Date(eventData.startTime).toUTCString(),
-					sourceLocation: eventData.allKpIndex[0].source,
-					severity: eventData.allKpIndex[0].kpIndex,
-					link: eventData.link,
-				};
-				console.log(event);
-				spaceWeatherEventsgst.push(event);
-			});
-			const gstListContainer = document.querySelector("#gst-list");
-			spaceWeatherEventsgst.forEach((gst) => {
-				const gstItem = document.createElement("li");
-				gstItem.innerHTML = `Starttime: ${gst.startTime} <br> Severity: ${gst.severity} <br> Source: ${gst.sourceLocation}<br> 
-      link: ${gst.link}<br><br>`;
-				gstListContainer.appendChild(gstItem);
-			});
-			gstListContainer.style.display = "block";
+	.then((response) => {
+		if (response.headers.get("Content-Length") == '0'){
+			return null;
+		}
+		else {
+			return response.json();
+		}
+	})	
+	.then((data) => {
+		if (data == null) {
+			document.querySelector("#gst-list").innerHTML = "No data";
+			return;
+		}
+		data.forEach((eventData) => {
+			const event = {
+				activityID: eventData.gstID,
+				startTime: new Date(eventData.startTime).toUTCString(),
+				sourceLocation: eventData.allKpIndex[0].source,
+				severity: eventData.allKpIndex[0].kpIndex,
+				link: eventData.link,
+			};
+			console.log(event);
+			spaceWeatherEventsgst.push(event);
 		});
+		const gstListContainer = document.querySelector("#gst-list");
+		spaceWeatherEventsgst.forEach((gst) => {
+			const gstItem = document.createElement("li");
+			gstItem.innerHTML = `Starttime: ${gst.startTime} <br> Severity: ${gst.severity} <br> Source: ${gst.sourceLocation}<br> 
+	link: ${gst.link}<br><br>`;
+			gstListContainer.appendChild(gstItem);
+		});
+		gstListContainer.style.display = "block";
+	});
 	fetch(apiUrlips)
-		.then((response) => response.json())
+		.then((response) => {
+			if (response.headers.get("Content-Length") == '0'){
+				return null;
+			}
+			else {
+				return response.json();
+			}
+		})
 		.then((data) => {
+			if (data == null) {
+				document.querySelector("#ips-list").innerHTML = "No data";
+				return;
+			}
 			data.forEach((eventData) => {
 				const event = {
 					activityID: eventData.activityID,
@@ -558,7 +596,11 @@ document.querySelector("form").addEventListener("submit", function (event) {
 			const dangerousIPSs = spaceWeatherEventsips.filter((ips) => {
 				return ips.Location === spaceTravelDestination;
 			});
-
+			if (dangerousIPSs.length == 0)
+			{
+				document.querySelector("#ips-list").innerHTML = "No data";
+				return;
+			}
 			console.log("dangerous");
 			console.log(dangerousIPSs);
 			// Display dangerous CME events
@@ -573,8 +615,19 @@ document.querySelector("form").addEventListener("submit", function (event) {
 			ipsListContainer.style.display = "block";
 		});
 	fetch(apiUrlflr)
-		.then((response) => response.json())
+		.then((response) => {
+			if (response.headers.get("Content-Length") == '0'){
+				return null;
+			}
+			else {
+				return response.json();
+			}
+		})
 		.then((data) => {
+			if (data == null) {
+				document.querySelector("#flr-list").innerHTML = "No data";
+				return;
+			}
 			data.forEach((eventData) => {
 				const event = {
 					activityID: eventData.flrID,
@@ -597,8 +650,19 @@ document.querySelector("form").addEventListener("submit", function (event) {
 			flrListContainer.style.display = "block";
 		});
 	fetch(apiUrlsep)
-		.then((response) => response.json())
+		.then((response) => {
+			if (response.headers.get("Content-Length") == '0'){
+				return null;
+			}
+			else {
+				return response.json();
+			}
+		})
 		.then((data) => {
+			if (data == null) {
+				document.querySelector("#sep-list").innerHTML = "No data";
+				return;
+			}
 			data.forEach((eventData) => {
 				const event = {
 					activityID: eventData.sepID,
@@ -618,8 +682,19 @@ document.querySelector("form").addEventListener("submit", function (event) {
 			sepListContainer.style.display = "block";
 		});
 	fetch(apiUrlmpc)
-		.then((response) => response.json())
+		.then((response) => {
+			if (response.headers.get("Content-Length") == '0'){
+				return null;
+			}
+			else {
+				return response.json();
+			}
+		})
 		.then((data) => {
+			if (data == null) {
+				document.querySelector("#mpc-list").innerHTML = "No data";
+				return;
+			}
 			data.forEach((eventData) => {
 				const event = {
 					activityID: eventData.mpcID,
@@ -639,8 +714,19 @@ document.querySelector("form").addEventListener("submit", function (event) {
 			mpcListContainer.style.display = "block";
 		});
 	fetch(apiUrlrbe)
-		.then((response) => response.json())
+		.then((response) => {
+			if (response.headers.get("Content-Length") == '0'){
+				return null;
+			}
+			else {
+				return response.json();
+			}
+		})
 		.then((data) => {
+			if (data == null) {
+				document.querySelector("#rbe-list").innerHTML = "No data";
+				return;
+			}
 			data.forEach((eventData) => {
 				const event = {
 					activityID: eventData.rbeID,
@@ -660,8 +746,19 @@ document.querySelector("form").addEventListener("submit", function (event) {
 			rbeListContainer.style.display = "block";
 		});
 	fetch(apiUrlhss)
-		.then((response) => response.json())
+		.then((response) => {
+			if (response.headers.get("Content-Length") == '0'){
+				return null;
+			}
+			else {
+				return response.json();
+			}
+		})
 		.then((data) => {
+			if (data == null) {
+				document.querySelector("#hss-list").innerHTML = "No data";
+				return;
+			}
 			data.forEach((eventData) => {
 				const event = {
 					activityID: eventData.hssID,
