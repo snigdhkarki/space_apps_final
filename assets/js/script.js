@@ -78,9 +78,9 @@ document.querySelector("form").addEventListener("submit", function (event) {
 		</div>
 	  </div>
 	  <div class="data">
-		<div id="data_div"><div style="display:flex;"><div style="flex:1;" id="cme-list" class="alllist" style="display: none"></div><div class="hello" style="flex:1;">Information about the sun and space weather should be relayed to space travellers to take precautionary measures
-		<br><br>Designated safe havens with additional shielding to protect against radiation and particles associated with CMEs.
-		<br><br>Space travelers can carry radiation monitoring equipment that continuously measures the radiation levels in their environment
+		<div id="data_div"><div style="display:flex;"><div style="flex:1;" id="cme-list" class="alllist" style="display: none"></div><div class="hello" style="flex:1;">>Information about the sun and space weather should be relayed to space travellers to take precautionary measures
+		<br><br>>Designated safe havens with additional shielding to protect against radiation and particles associated with CMEs.
+		<br><br>>Space travelers can carry radiation monitoring equipment that continuously measures the radiation levels in their environment
 			</div></div></div>
 		<div id="about_div">Bursts of solar plasma(materials) and magnetic fields into space at speed ranging from 250km/s to as fast as 3000km/s.These events are associated with the Sun and are caused by various solar activities, such as solar flares or the destabilization of the Sun's magnetic fields.
 			
