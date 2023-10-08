@@ -154,15 +154,14 @@ function openForm() {
         <label for="destination" >Select Destination:</label>
         <select id="destination" name="destination" required>
         <option disabled selected value="">-- Select a planet --</option>
-          <option value="mars">Mercury</option>
-          <option value="jupiter">Venus</option>
-          <option value="Moon">Earth</option>
-          <option value="Jupiter">Mars</option>
-          <option value="mars">Jupiter</option>
-          <option value="mars">Saturn</option>
-          <option value="mars">Uranus</option>
-          <option value="mars">Neptune</option>
-          <!-- Add more options for other destinations -->
+        <option value="Mercury">Mercury</option>
+        <option value="Venus">Venus</option>
+        <option value="Earth">Earth</option>
+        <option value="Mars">Mars</option>
+        <option value="Jupiter">Jupiter</option>
+        <option value="Saturn">Saturn</option>
+        <option value="Uranus">Uranus</option>
+        <option value="Neptune">Neptune</option>
         </select>
       </div>
       <div class="date">
